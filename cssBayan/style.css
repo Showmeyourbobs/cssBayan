@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    background-color: rgb(30, 30, 31);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h1,h2 {
+    margin: 0;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+.header_title {
+    font-family: 'Inter', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+.wrapper_main {
+    max-width: 700px;
+    background-color: rgb(228, 253, 4);
+    margin: 0 auto;
+    padding: 30px 30px;
+    cursor: pointer;
+    border: 5px solid;
+}
+.wrapper_main:hover {
+    color: rgb(255, 0 , 0);
+    transition: .3s ease-in-out;
+}
+.white {
+    color: rgb(255, 0, 0);
+}
+.bayan_input {
+    appearance: none;
+}
+.bayan_name {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.bayan_input:checked ~ label .bayan_picter {
+    display: block;
+    width: 300px;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+.bayan_picter {
+    width: 0;
+    margin: 0 auto;
+    transition: .3s ease-in-out;
+}
+.bayan_label {
+    cursor: pointer;
+}
+.bayan_grind {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.bayan_name {
+    font-family: 'Inter', sans-serif;
+    transition: .3s ease-in-out;
+}
+
+.bayan_input:checked ~ label .bayan_name i {
+    display: block;
+}
+.bayan_items:hover .bayan_picter {
+    width: 300px;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+.arrow_up {
+    font-size: 35px;
+}
+.bayan_input:checked ~ label .arrow {
+    transform: rotate(45deg);
+    transition: .3s ease-in-out;
+}
+
+
+@media (max-width: 820px) {
+    .wrapper_main {
+        cursor: none;
+        max-width: auto;
+        max-height: auto;
+        border-radius: 2%;
+    }
+    .background_wrapper {
+        height: auto;
+        width: auto;
+        overflow: auto;
+    }
+    
+}
+
+@media (max-width: 320px) {
+    .wrapper_main {
+        cursor: none;
+        border-radius: 2%;
+    }
+}
