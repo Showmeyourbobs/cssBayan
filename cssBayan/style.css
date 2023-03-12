@@ -26,21 +26,31 @@ img {
     max-width: 700px;
     background-color: rgb(228, 253, 4);
     margin: 0 auto;
-    padding: 10px 10px;
+    padding: 30px 30px;
     cursor: pointer;
     border: 5px solid;
 }
 .wrapper_main:hover {
     color: rgb(255, 0 , 0);
+    transition: .3s ease-in-out;
 }
 .white {
     color: rgb(255, 0, 0);
 }
+.bayan_input {
+    appearance: none;
+}
 .bayan_name {
     border-bottom: 1px solid rgb(0, 0, 0);
 }
-.bayan_picter {
+.bayan_input:checked ~ label .bayan_picter {
+    display: block;
     width: 300px;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+.bayan_picter {
+    width: 0;
     margin: 0 auto;
     transition: .3s ease-in-out;
 }
@@ -51,13 +61,26 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.bayan_input {
-    appearance: none;
+    padding: 10px;
 }
 .bayan_name {
     font-family: 'Inter', sans-serif;
     transition: .3s ease-in-out;
 }
 
+.bayan_input:checked ~ label .bayan_name i {
+    display: block;
+}
+.bayan_items:hover .bayan_picter {
+    width: 300px;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+.arrow_up {
+    font-size: 35px;
+}
+.bayan_input:checked ~ label .arrow {
+    transform: rotate(45deg);
+    transition: .3s ease-in-out;
+}
 
