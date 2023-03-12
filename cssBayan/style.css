@@ -7,20 +7,57 @@ body {
 *::after {
   box-sizing: border-box;
 }
+h1,h2 {
+    margin: 0;
+}
+img {
+    width: 100%;
+    height: auto;
+}
 
 .header_title {
     font-family: 'Inter', sans-serif;
     font-size: 50px;
     text-align: center;
     color: rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
 }
 .wrapper_main {
     max-width: 700px;
     background-color: rgb(228, 253, 4);
     margin: 0 auto;
-    /* padding: 5px 5px; */
+    padding: 10px 10px;
+    cursor: pointer;
+    border: 5px solid;
+}
+.wrapper_main:hover {
+    color: rgb(255, 0 , 0);
 }
 .white {
     color: rgb(255, 0, 0);
 }
+.bayan_name {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.bayan_picter {
+    width: 300px;
+    margin: 0 auto;
+    transition: .3s ease-in-out;
+}
+.bayan_label {
+    cursor: pointer;
+}
+.bayan_grind {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bayan_input {
+    appearance: none;
+}
+.bayan_name {
+    font-family: 'Inter', sans-serif;
+    transition: .3s ease-in-out;
+}
+
 
